@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        dialog {
+            width: 600px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            translate: -50% -50%;
+            background-color: aliceblue;
+            border-radius: 10px;
+            border: none;
+
+            .block {
+                padding-left: 40px;
+                padding-top: 40px;
+
+                .close {
+                    all: unset;
+                    background-color: aqua;
+                    padding: 5px 20px;
+                    width: 480px;
+                    height: 40px;
+                    margin-top: 30px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form name="login">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="age" name="age">
+        <select name="">
+            <option value="">Not Selected</option>
+            <option value="">JavaScript</option>
+            <option value="">Python</option>
+            <option value="">Swift</option>
+            <option value="">C#</option>
+            <option value="">C++</option>
+            <option value="">Kotlin</option>
+        </select>
+        <button data-open>Add</button>
+    </form>
+
+
+
+    <dialog>
+        <div class="block">
+            <h1></h1>
+
+            <button class="close" data-close>✔️</button>
+        </div>
+    </dialog>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
